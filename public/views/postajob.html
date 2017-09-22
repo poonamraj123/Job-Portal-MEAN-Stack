@@ -1,0 +1,12 @@
+<my-nav></my-nav>
+<div class="jumbotron">
+    
+<form class="container" style="max-width:400px" id ="jobform" name="jobform" ng-controller="homeCntrl">
+    <h2> Post a Job</h2>
+    <input type="text" ng-model="job.title" class="form-control" placeholder="Job Title" required /><br />
+    <input type="text" ng-model="job.desc" class="form-control" placeholder="Job Description" required /><br />
+    <input type="text" ng-model="job.keywords" class="form-control" placeholder="Keywords for search-Criteria" required /><br />
+    <input type="text" ng-model="job.location" class="form-control" placeholder="Job location" required /><br />
+    <button ng-click="PostJob(job)" class="btn btn-primary"> Post-a-Job </button> 
+</form> 
+</div>
